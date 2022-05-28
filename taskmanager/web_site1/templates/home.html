@@ -1,0 +1,200 @@
+{% extends 'main_site.html' %}
+
+{% block content %}
+
+   <p>Добро пожаловать, {% if user.is_authenticated %}{{ user.username }}{% else %}гость{% endif %}!</p>
+
+   <div align="center">
+       <h1>Локации для съемок</h1>
+   </div>
+
+   <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <!---<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Кинотеатр</text></svg>-->
+
+              <div class="card-body">
+                  <img src="http://kinolocation.ru/wp-content/image_thumbs/1-12914-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="IMG_4952" title="IMG_4952"><br>
+                  <br>
+                  <p class="card-text">Аэродром</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="aerodrom">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 1</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <!----<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Кинотеатр</text></svg>-->
+
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-13272-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="DSC03449" title="DSC03449"><br>
+                <br>
+              <p class="card-text">Лекционный зал</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="lecture">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 2</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-23742-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="DSC_0010" title="DSC_0010"><br>
+                <br>
+              <p class="card-text">Порт</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="port">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 3</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-19140-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="Gallery2" title="Gallery2"><br>
+                <br>
+              <p class="card-text">Галерея</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="gallery">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 4</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-20452-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="dsc_7749" title="dsc_7749"><br>
+                <br>
+              <p class="card-text">Гостиница</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="hotel">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 5</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-20518-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="dsc_7548" title="dsc_7548"><br>
+                <br>
+              <p class="card-text">Полиция</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="police">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 6</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-20727-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="dsc_7979" title="dsc_7979"><br>
+                <br>
+              <p class="card-text">Особняк</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="mansion">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 7</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-22987-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="DSC_9857" title="DSC_9857"><br>
+                <br>
+              <p class="card-text">Белый дом</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="white">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 8</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+                <img src="http://kinolocation.ru/wp-content/image_thumbs/1-24033-300-180-1-0-0-95.jpeg" width="375" height="210" class="attachment-thumbnail" alt="47" title="47"><br>
+                <br>
+              <p class="card-text">Научный центр</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="science">Посмотреть на сайте</a>
+                  </button>
+                </div>
+                <small class="text-muted">номер объекта 9</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+<p>
+    <strong>Всего зарегистрированных пользователей: </strong> {{ count }}
+</p>
+
+<div class="navigation clearfix" align="center">
+    <div class="wp-pagenavi" role="navigation">
+
+        <a class="page larger" title="Страница 1" href="home">1 </a><a class="page larger" title="Страница 2" href="home2">2 </a>
+    </div>
+</div>
+<br>
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container" align="center">
+    <span class="text-muted">Cinema space 2021</span>
+  </div>
+</footer>
+
+{% endblock %}
